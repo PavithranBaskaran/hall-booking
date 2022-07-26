@@ -138,7 +138,7 @@ app.get("/roomsbooked", async function (request, response) {
 });
 
 //listen
-app.listen(3002);
+app.listen(process.env.PORT || 3002);
 
 // db.rooms.aggregate([
 //   {
